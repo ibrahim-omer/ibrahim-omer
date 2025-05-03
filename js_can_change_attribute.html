@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute change</title>
+<link rel="stylesheet" href="style.css" >
+<script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="light_container">
+
+            <!-- inline scripting method  -->
+
+            <!-- <button  onclick="document.getElementById('myImage').src='images/pic_bulbon_on.gif'"> turn on</button>
+            <img id="myImage" src="images/pic_bulbon_on.gif" />
+            <button  onclick="document.getElementById('myImage').src='images/pic_bulboff.gif'" > turn off</button> -->
+
+
+            <!-- external scripting method  -->
+             <button id="on_btn"  onclick="turn_on()"> turn on </button>
+            <img id="myImage" src="images/pic_bulbon_on.gif" />
+
+             <button id="off_btn" onclick="turn_off()"> turn off</button>
+        </div>
+
+        <div id="dropdown_container">
+           <select class="cars_dropdown" id="car_options"  onchange="car()">
+
+               <option value="nothing" >select car type..</option>
+               <option value="BMW">bmw</option>
+               <option value="AMG">amg</option>
+               <option value="AUDI">audi</option>
+               <option value="RANGE">range</option>
+           </select>
+    
+    
+        </div>
+
+        <!-- car image -->
+         <img id="car_images" />
+
+         <!-- inserting table dynamicly -->
+         <table id="car_details" border="1px">
+     
+     
+         </table>
+    </div>
+
+    <!-- <script> window.alert("hello")</script> -->
+    <!-- <script> document.write(5+2)</script> -->
+
+    <!-- dropdown menue for displaying cars -->
+
+
+</body>
+</html>

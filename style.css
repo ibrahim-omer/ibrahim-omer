@@ -1,0 +1,65 @@
+body {
+    background-color: silver;
+    
+}
+button {
+    border: solid 0px;
+    border-radius: 5px;
+    background-color:rgba(255, 0, 0, 0.972);
+    color:white;
+    padding: 5px;
+    width: 100px;
+    height: 40px;
+}
+
+
+button:hover {
+    background-color:#ff3c00e1;
+    cursor:pointer;
+
+}
+.container{
+    display:flex;
+    flex-direction:column;
+    row-gap:1.5rem;
+    align-items:center;
+    justify-content:center;
+    padding:1.5rem;
+    padding-top:0px;
+    /* background-color:brown */
+}
+
+.light_container {
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    align-items:end;
+    width:600px;
+    /* background-color: dodgerblue; */
+    /* margin:15% 0% 0% 20%; */
+}
+
+
+
+.cars_dropdown {
+    height: 30px;
+    width:340px;
+    border:none;
+    border-radius:5px;
+    margin:5px;
+outline: 0.1rem inset #ff3c00e1;
+/* outline-offset:5px; */
+    padding:3px;
+}
+
+/* select>option{
+background-color:red ;   it did not work for some reason
+} */
+
+#car_images {
+border-radius:1%;
+box-shadow:20px 15px 15px 1px #0000007e;
+width:30%;
+min-width: 30%;
+height:20%;
+}
